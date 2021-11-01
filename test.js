@@ -1,25 +1,26 @@
 // object gyakorlás
 
-// var list = ['Audi', 'Skoda', 'BMW', 'Jaguar'];
+let bookMarks = {
+    'myBook1':  {
+        'title': 'Harry Potter és a bölcsek köve',
+        'author': 'J. K. Rowling',
+        'release title': '2008'
+    },
+    'myBook2': {
+        'title': 'Harry Potter és a bölcsek köve',
+        'author': 'J. K. Rowling',
+        'release title': '2008',
+    },
+    'page number': function bookmark(book) {
+        this[book].page = prompt('Add meg az oldalt ahol tartasz: ');
+        alert('Te a ' + this[book].title + ' könyv ' + this[book].page + '. oldalán tartasz!');
+    }
+}
 
-// for(var i = 0; i < list.length; i++) {
-//     console.log('A lista tartalma: ' + list[i]);
-// }
+a = prompt('Add meg melyik könyvet olvasod: ');
+myBook1['page number'](a);
 
-// var cars = {
-//     marka     : 'Audi',
-//     kobcenti  : 12,
-//     szin      : 'fekete',
-//     1945      : 'igen',
-//     'fullname neved'  : function() {
-//         var name = prompt('Add meg a neved kérlek!');
-//         alert('A te neved: ' + name);
-//     }
-// }
 
-// cars['fullname neved']();
-
-// console.log(cars.marka);
 
 
 // // alapszám és szorzoszám
