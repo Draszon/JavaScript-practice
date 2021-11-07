@@ -1,24 +1,34 @@
 // object gyakorlás
 
-let bookMarks = {
-    'myBook1':  {
-        'title': 'Harry Potter és a bölcsek köve',
-        'author': 'J. K. Rowling',
-        'release title': '2008'
+let car = {
+    'Fiat': {
+        'type': 'Fiat',
+        'model': '500',
+        'color': 'white',
+        'mukszik': false
     },
-    'myBook2': {
-        'title': 'Harry Potter és a bölcsek köve',
-        'author': 'J. K. Rowling',
-        'release title': '2008',
+    'Audi': {
+        'type': 'Audi',
+        'model': 'A6',
+        'color': 'red',
+        'mukszik': true
     },
-    'page number': function bookmark(book) {
-        this[book].page = prompt('Add meg az oldalt ahol tartasz: ');
-        alert('Te a ' + this[book].title + ' könyv ' + this[book].page + '. oldalán tartasz!');
+    'km oraallas': function (marka) {
+        this[marka].kmAllas = prompt('Add meg az óraállást: ');
+        alert('A/Az ' + this[marka]['type'] + ' óraállása: ' + this[marka]['kmAllas'] + 'km');
+    },
+    'mukszike': function (kocsi) {
+        let mukodik = [];
+        //leellenőrizni, hogy működik e az autó
+        for (var kocsineve in this){
+            if () {
+                mukodik.push();
+            }
+        }
     }
 }
 
-a = prompt('Add meg melyik könyvet olvasod: ');
-myBook1['page number'](a);
+//car['km oraallas'](prompt('Add meg az autót: '));
 
 
 
