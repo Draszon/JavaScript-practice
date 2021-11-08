@@ -1,36 +1,43 @@
 // object gyakorlás
 
-let car = {
-    'Fiat': {
-        'type': 'Fiat',
-        'model': '500',
-        'color': 'white',
-        'mukszik': false
-    },
-    'Audi': {
-        'type': 'Audi',
-        'model': 'A6',
-        'color': 'red',
-        'mukszik': true
-    },
-    'km oraallas': function (marka) {
-        this[marka].kmAllas = prompt('Add meg az óraállást: ');
-        alert('A/Az ' + this[marka]['type'] + ' óraállása: ' + this[marka]['kmAllas'] + 'km');
-    },
-    'mukszike': function (kocsi) {
-        let mukodik = [];
-        //leellenőrizni, hogy működik e az autó
-        for (var kocsineve in this){
-            if () {
-                mukodik.push();
-            }
-        }
-    }
-}
+//KIVÁLASZTJA EGY OBJEKTUMBAN ADOTT TULAJDONSÁG ALAPJÁN HOGY MELYIKRE IGAZ
 
-//car['km oraallas'](prompt('Add meg az autót: '));
+// let car = {
+//     'Fiat': {
+//         'type': 'Fiat',
+//         'model': '500',
+//         'color': 'white',
+//         'mukszik': true
+//     },
+//     'Audi': {
+//         'type': 'Audi',
+//         'model': 'A6',
+//         'color': 'red',
+//         'mukszik': true
+//     },
+//     'km oraallas': function (marka) {
+//         this[marka].kmAllas = prompt('Add meg az óraállást: ');
+//         alert('A/Az ' + this[marka]['type'] + ' óraállása: ' + this[marka]['kmAllas'] + 'km');
+//     },
+//     'mukszike': function () {
+//         let mukszike = [];
+//         for (let cars in this) {
+//             if (this[cars]['mukszik'] === true) {
+//                 mukszike.push(this[cars]['type']);
+//             }
+//         }
 
+//         if (mukszike.length === 0) {
+//             console.log('Egyik kocsi sem működik!');
+//         } else {
+//             console.log('Ez a kocsi működik: ' + mukszike);
+//         }
 
+        
+//     }
+// }
+
+// car['mukszike']();
 
 
 // // alapszám és szorzoszám
