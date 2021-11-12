@@ -1,2 +1,2 @@
 # JavaScript-practice
-i learn javascript
+I learn javascript
