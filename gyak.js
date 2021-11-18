@@ -30,9 +30,18 @@ let cars = {
         'horse power': 175,
         'used car': true,
         'owner': null,
-        'km clock': {
-            '2000': 112000,
-            '2005': 114520
+        // 'km clock': {
+        //     '2000': 112000,
+        //     '2005': 114520
+        // }
+    },
+    'traveled kms': function(car) {
+        var km = this[car].kms;
+        this[car].kms = prompt('Add meg a kilométeróra állást ebben az autóban: ' + this[car].type);
+        if (typeof km === 'undefined') {
+            alert('Jelenlegi km óra állása: ' + this[car].kms);
+        } else {
+            alert('A mostani km óra állása: ' + this[car].kms + '. Az előző út óta megtett táv: ' + (this[car].kms - km));
         }
     }
 }
