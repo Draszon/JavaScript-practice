@@ -96,5 +96,41 @@ function loaded() {
     // context.strokeStyle = 'red';
     // context.stroke();
 
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // var size = 45;
+    // var padding = 20;
+    // context.fillStyle = 'rgba(255,165,0,.5)';
+    // for(var squerCounter = 0; squerCounter < 10; squerCounter++){
+    //     context.fillRect(padding, padding, size, size);
+    //     padding += size / 2;
+    // }
+
+    var canvasWidth = canvas.width;
+    var canvasHeight = canvas.height;
+    var size = 50;
+    var padding = 15;
+    var space = 5;
     
+    // for(var squerCounter = 0; squerCounter < 15; squerCounter++){
+    //     var positionX = 15;
+    //     var positionY = 15;
+
+    //     for (var rowCounter = 0; rowCounter < 5; rowCounter++){
+    //         context.fillStyle = 'rgba(255,165,0,.5)';
+    //         context.fillRect(positionX, positionY, size, size);
+    //         positionX = padding + space + size;
+    //     }
+    // }
+
+    for (var rowCounter = 0; rowCounter < 5; rowCounter++) {
+        var positionX = 15;
+        var positionY = 15;
+        for (var squareCounter = 0; squareCounter < 15; squareCounter++) {
+            context.fillStyle = 'rgba(255,165,0,.5)';
+            context.fillRect(positionX, positionY, size, size);
+            positionX = padding + size + space;
+        }
+    }
+
 }
