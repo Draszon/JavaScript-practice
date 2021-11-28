@@ -13,16 +13,20 @@ function loaded() {
     // context.strokeStyle = 'orange'; //ilyen színnel lesz kitöltve
     // context.stroke(); //megrajzolom a vonalat ("tinta metódus")
 
+
+    //1. feladat
     // context.beginPath();
     // context.moveTo(0,300);
     // context.lineTo(450,0);
     // context.strokeStyle = 'red';
     // context.stroke();
 
+    //2. feladat
     // var contextWidth = canvas.width;
     // var contextHeight = canvas.height;
     // context.fillRect(contextWidth / 2, contextHeight / 2, contextWidth / 2, contextHeight / 2);
 
+    //3. feladat
     // var contextWidth = canvas.width;
     // var contextHeight = canvas.height;
     // var size = 100;
@@ -30,6 +34,7 @@ function loaded() {
     // context.fillStyle = 'green';
     // context.fillRect(contextWidth - size - padding, contextHeight - size - padding, size, size);
 
+    //4. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // var size = 100;
@@ -42,6 +47,7 @@ function loaded() {
     // context.fillStyle = 'rgba(0,0,255,.5)';
     // context.fillRect(positionX, positionY, size, size);
 
+    //5. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // var rectWidth = 250;
@@ -55,6 +61,7 @@ function loaded() {
     // context.fillStyle = 'green';
     // context.fillRect(positionX, positionY + rectHeight, rectWidth, rectHeight);
 
+    //6. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // context.beginPath();
@@ -68,6 +75,7 @@ function loaded() {
     // context.strokeStyle = 'red';
     // context.stroke();
 
+    //7. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // var size = 150;
@@ -83,6 +91,7 @@ function loaded() {
     // context.fillStyle = 'rgba(255,165,0,.5)';
     // context.fill();
 
+    //8. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // context.beginPath();
@@ -96,6 +105,7 @@ function loaded() {
     // context.strokeStyle = 'red';
     // context.stroke();
 
+    //9. feladat
     // var canvasWidth = canvas.width;
     // var canvasHeight = canvas.height;
     // var size = 45;
@@ -106,31 +116,89 @@ function loaded() {
     //     padding += size / 2;
     // }
 
-    var canvasWidth = canvas.width;
-    var canvasHeight = canvas.height;
-    var size = 50;
-    var padding = 15;
-    var space = 5;
-    
-    // for(var squerCounter = 0; squerCounter < 15; squerCounter++){
+    //10. feladat
+    // var size = 50;
+    // var padding = 5;
+    // for (rowCounter = 0; rowCounter < 5; rowCounter++) {
     //     var positionX = 15;
     //     var positionY = 15;
-
-    //     for (var rowCounter = 0; rowCounter < 5; rowCounter++){
+    //     for (var squareCounter = 0; squareCounter <= rowCounter; squareCounter++) {
     //         context.fillStyle = 'rgba(255,165,0,.5)';
-    //         context.fillRect(positionX, positionY, size, size);
-    //         positionX = padding + space + size;
+    //         context.fillRect(positionX + squareCounter * (size + padding), positionY + rowCounter * (size + padding), size, size);
     //     }
     // }
 
-    for (var rowCounter = 0; rowCounter < 5; rowCounter++) {
-        var positionX = 15;
-        var positionY = 15;
-        for (var squareCounter = 0; squareCounter < 15; squareCounter++) {
-            context.fillStyle = 'rgba(255,165,0,.5)';
-            context.fillRect(positionX, positionY, size, size);
-            positionX = padding + size + space;
-        }
-    }
+    //11.feladat
+    // var size = 30;
+    // var padding = 5;
+    // var positionY = 50;
+    // var red = 255;
+    // var green = 79;
+    // var blue = 120;
+    // for (var rowCounter = 0; rowCounter < 6; rowCounter++) {
+    //     var positionX = 125;
+    //     for(var squareCounter = 0; squareCounter < 6; squareCounter++) {
+    //         context.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';
+    //         context.fillRect(positionX, positionY, size, size);
+    //         red -= 7;
+    //         positionX += size + padding;
+    //     }
+    //     blue += 15;
+    //     positionY += size + padding;
+    // }
+    
+    //12.feladat
+    // var size = 100;
+    // var padding = 120;
+    // var move = 5;
+    // for (var triangleCounter = 0; triangleCounter < 30; triangleCounter++ ) {
+    //     context.beginPath();
+    //     context.moveTo(padding, padding);
+    //     context.lineTo(padding + (size / 2), padding - size);
+    //     context.lineTo(padding + size, padding);
+    //     context.lineTo(padding, padding);
+    //     context.strokeStyle = 'grey';
+    //     context.stroke();
+    //     padding += move;
+    // }
 
+    //13.feladat
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // var padding = 10;
+    // var positionX = 0;
+    // var positionY = 0;
+    // var hue = 360;
+    // var saturation = 60;
+    // var lightness = 45;
+    // for (var rectangleCounter = 0; rectangleCounter < 17; rectangleCounter++) {
+    //     context.fillStyle = 'hsl(' + hue + ',' + saturation + '%,' + lightness + '%)';
+    //     context.fillRect(positionX, positionY, canvasWidth, canvasHeight);
+    //     hue -= 360 / 17;
+    //     positionX += padding;
+    //     positionY += padding;
+    //     canvasWidth -= 20;
+    //     canvasHeight -= 20;
+    // }
+
+    //14.feladat
+    // var size = 50;
+    // var positionX = 20;
+    // var positionY = 15;
+    // for (var rectCounter = 0; rectCounter < 15; rectCounter++) {
+    //     if (rectCounter % 3 === 0) {
+    //         context.fillStyle = 'rgba(0,0,255,.5)';
+    //     } else if (rectCounter % 5 === 0) {
+    //         context.fillStyle = 'rgba(255,255,0,.5)';
+    //     } else if (rectCounter % 3 === 0 && rectCounter % 5 === 0) {
+    //         context.fillStyle = 'rgba(0,255,0,.5)';
+    //     } else if (rectCounter % 3 !== 0 && rectCounter % 5 !== 0) {
+    //         context.fillStyle = 'rgba(0,0,0,.5)';
+    //     } else {
+    //         alert('Valami hiba történt!');
+    //     }
+    // }
+
+    //15.feladat
+    
 }
