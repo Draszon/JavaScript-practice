@@ -200,5 +200,44 @@ function loaded() {
     // }
 
     //15.feladat
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // for (var counter = 0; counter <= canvasWidth; counter++) {
+    //     if (counter % 3 === 0) {
+    //         context.beginPath();
+    //         context.moveTo(counter, canvasHeight / 2);
+    //         if (counter % 2 === 0) {
+    //             context.lineTo(canvasWidth / 2, canvasHeight - canvasHeight);
+    //         } else {
+    //             context.lineTo(canvasWidth / 2, canvasHeight);
+    //         }
+    //         context.strokeStyle = 'rgba(255,0,0,.5)';
+    //         context.stroke();
+    //     }
+    // }
+
+    //16.feladat
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // for (counter = 0; counter <= canvas.width; counter++) {
+    //     context.beginPath();
+    //     context.moveTo(counter, canvasHeight / 2);
+    //     if (counter % 4 === 0) {
+    //         context.lineTo(canvasWidth - canvasWidth, canvasHeight - canvasHeight);
+    //     } else if (counter % 4 === 1) {
+    //         context.lineTo(canvasWidth, canvasHeight - canvasHeight);
+    //     } else if (counter % 4 === 2) {
+    //         context.lineTo(canvasWidth - canvasWidth, canvasHeight);
+    //     } else if (counter % 4 === 3) {
+    //         context.lineTo(canvasWidth, canvasHeight);
+    //     } else {
+    //         alert('Valami hiba történt!');
+    //     }
+    //     context.strokeStyle = 'rgba(0,0,255,.5)';
+    //     context.stroke();
+    // }
+
+    //17.feladat
+    
     
 }
