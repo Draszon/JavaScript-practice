@@ -269,9 +269,10 @@ function loaded() {
     //     context.fill();
     //     context.stroke();
     // }
-
     // star(40, 50, 75);
     // star(130, 120, 100);
     // star(250, 220, 150);
+
+    //19.feladat
         
 }
