@@ -274,5 +274,46 @@ function loaded() {
     // star(250, 220, 150);
 
     //19.feladat
-        
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // function lineToCenter(positionX, positionY, color) {
+    //     context.beginPath();
+    //     context.moveTo(positionX, positionY);
+    //     context.lineTo(canvasWidth / 2, canvasHeight / 2);
+    //     context.strokeStyle = color;
+    //     context.stroke();
+    // }
+    // function random(max, min) {
+    //     return Math.floor(Math.random() * (max - min + 1) + min);
+    // }
+    // for (var lineCounter = 0; lineCounter <= 1000; lineCounter++) {
+    //     lineToCenter(random(canvasWidth, 0), random(canvasHeight, 0), 'teal');
+    // }
+
+    //20.feladat
+    // canvasWidth = canvas.width;
+    // canvasHeight = canvas.height;
+    // hexaHeight = 98;
+    // hexaWidth = 113;
+    // function drawHexagon(positionX, positionY) {
+    //     context.beginPath();
+    //     context.moveTo(positionX, positionY);
+    //     context.lineTo(positionX + hexaWidth / 2 * 0.5, positionY - hexaHeight / 2);
+    //     context.lineTo(positionX + hexaWidth / 2 * 1.5, positionY - hexaHeight / 2);
+    //     context.lineTo(positionX + hexaWidth, positionY);
+    //     context.lineTo(positionX + hexaWidth / 2 * 1.5, positionY + hexaHeight / 2);
+    //     context.lineTo(positionX + hexaWidth / 2 * 0.5, positionY + hexaHeight / 2);
+    //     context.lineTo(positionX, positionY);
+    //     context.strokeStyle = 'orange';
+    //     context.stroke();
+    // }
+    // drawHexagon(76, 120);
+    // drawHexagon(76, 230);
+    // drawHexagon(168.5, 65);
+    // drawHexagon(168.5, 175);
+    // drawHexagon(168.5, 285);
+    // drawHexagon(261, 120);
+    // drawHexagon(261, 230);
+    // context.fillStyle = 'orange';
+    // context.fill();
 }
