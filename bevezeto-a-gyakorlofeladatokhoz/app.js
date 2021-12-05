@@ -316,4 +316,86 @@ function loaded() {
     // drawHexagon(261, 230);
     // context.fillStyle = 'orange';
     // context.fill();
+
+    //11.feladat
+    // var size = 30;
+    // var padding = 5;
+    // var positionY = 50;
+    // var red = 255;
+    // var green = 79;
+    // var blue = 120;
+    // for (var rowCounter = 0; rowCounter < 6; rowCounter++) {
+    //     var positionX = 125;
+    //     for(var squareCounter = 0; squareCounter < 6; squareCounter++) {
+    //         context.fillStyle = 'rgb(' + red + ',' + green + ',' + blue + ')';
+    //         context.fillRect(positionX, positionY, size, size);
+    //         red -= 7;
+    //         positionX += size + padding;
+    //     }
+    //     blue += 15;
+    //     positionY += size + padding;
+    // }
+
+    //21.feladat
+    // var canvasWidth = canvas.width;
+    // var canvasHeight = canvas.height;
+    // var sizeWidth = canvasWidth / 8;
+    // var sizeHeight = canvasHeight / 8;
+    // function drawCheckeredPattern(row, col) {
+    //     var positionY = 0;
+    //     for (var rowCounter = 1; rowCounter <= row; rowCounter++) {
+    //         var positionX = 0;
+    //         if (rowCounter % 2 ===  1) {
+    //             for (var squareCounter = 1; squareCounter <= col; squareCounter++) {
+    //                 if (squareCounter % 2 === 1) {
+    //                     context.fillStyle = 'white';
+    //                 } else {
+    //                     context.fillStyle = 'black';
+    //                 }
+    //                 context.fillRect(positionX, positionY, sizeWidth, sizeHeight);
+    //                 positionX += sizeWidth;
+    //             }
+    //         } else {
+    //             for (var squareCounter = 1; squareCounter <= col; squareCounter++) {
+    //                 if (squareCounter % 2 === 1) {
+    //                     context.fillStyle = 'black';
+    //                 } else {
+    //                     context.fillStyle = 'white';
+    //                 }
+    //                 context.fillRect(positionX, positionY, sizeWidth, sizeHeight);
+    //                 positionX += sizeWidth;
+    //             }
+    //         }
+    //         positionY += sizeHeight;
+    //     }
+    // }
+    // drawCheckeredPattern(8,8);
+
+    //22.feladat
+    // var base = 100;
+    // var altitude = 86.6;
+    // function drawTriangle(positionX, positionY) {
+    //     for (var rowCounter = 0; rowCounter < 3; rowCounter++) {
+    //         for (var triangleCounter = 0; triangleCounter <= rowCounter; triangleCounter++) {
+    //             context.beginPath();
+    //             context.moveTo(positionX - rowCounter * base / 2 + triangleCounter * base, positionY + rowCounter * altitude);
+    //             context.lineTo(positionX - (rowCounter + 1) * base / 2 + triangleCounter * base, positionY + (rowCounter + 1) * altitude);
+    //             context.lineTo(positionX - (rowCounter - 1) * base / 2 + triangleCounter * base, positionY + (rowCounter + 1) * altitude);
+    //             context.lineTo(positionX - rowCounter * base / 2 + triangleCounter * base, positionY + rowCounter * altitude);
+    //             if (rowCounter === 0) {
+    //                 context.strokeStyle = 'rgb(227,98,102)';
+    //                 context.fillStyle = 'rgb(227,98,102)';
+    //             } else if (rowCounter === 1) {
+    //                 context.strokeStyle = 'rgb(38,172,73)';
+    //                 context.fillStyle = 'rgb(38,172,73)';
+    //             } else {
+    //                 context.strokeStyle = 'rgb(34,128,128)';
+    //                 context.fillStyle = 'rgb(34,128,128)';
+    //             }
+    //             context.stroke();
+    //             context.fill();
+    //         }
+    //     }
+    // }
+    // drawTriangle(225, 33);
 }
