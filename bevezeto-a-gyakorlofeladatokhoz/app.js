@@ -1,7 +1,7 @@
 function loaded() {
 
-    var canvas = document.getElementById('myCanvas');
-    var context = canvas.getContext('2d');
+    // var canvas = document.getElementById('myCanvas');
+    // var context = canvas.getContext('2d');
 
     //context.fillStyle = 'black';
     
@@ -398,4 +398,40 @@ function loaded() {
     //     }
     // }
     // drawTriangle(225, 33);
+
+    //CLOSURE
+    // (function () {
+    //     var greeting = "Hello ";
+    //     function greetWithExcitement (name) {
+    //         var excitement = "!!!";
+    //         console.log(greeting + name + excitement);
+    //     }
+    //     greetWithExcitement("Berry");
+    // })();
+
+    //ha valamit később is akarunk használni a becsomagolt
+    //kódból azt adjuk vissza a csomagolófüggvény visszatérési, return értékeként
+    // var greet = (function (){
+    //     var greeting = 'Hello ';
+    //     function greetWithExcitement (name) {
+    //         var excitement = "!!!";
+    //         console.log(greeting + name + excitement);
+    //     }
+    //     return greetWithExcitement;
+    // })();
+    // greet("Berry");
+
+    // var converter = (function () {
+    //     var a;
+    //     function logAbsoluteUrl (url) {
+    //         if (!a) {
+    //             a = document.createElement('a');
+    //         }
+    //         a.href = url;
+    //         console.log(a.href);
+    //     };
+    //     return logAbsoluteUrl;
+    // })();
+    // converter("valami");
+
 }
