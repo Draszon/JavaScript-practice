@@ -434,4 +434,24 @@ function loaded() {
     // })();
     // converter("valami");
 
+
+    //köszönő modulba csomagolt köszönő függvények
+    // var moduleName = (function () {
+    //     var greeting = "Hello ";
+
+    //     return {
+    //         greetWithExcitement (name) {
+    //             var excitement = "!!!";
+    //             console.log(greeting + name + excitement);
+    //         },
+    //         greetWithASmile (name) {
+    //             var smile = " :)";
+    //             console.log(greeting + name + smile);
+    //         }
+    //     }
+    // })();
+
+    // moduleName.greetWithExcitement("Berry");
+    // moduleName.greetWithASmile("Berry");
+
 }
