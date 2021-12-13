@@ -398,6 +398,7 @@ function loaded() {
     //     }
     // }
     // drawTriangle(225, 33);
+}
 
     //CLOSURE
     // (function () {
@@ -454,4 +455,39 @@ function loaded() {
     // moduleName.greetWithExcitement("Berry");
     // moduleName.greetWithASmile("Berry");
 
-}
+// const person = {
+//   'name': "Berry",
+//   'hobbies': ["Discgolf", "Mantrailing"],
+//   'introduce': function () {
+//     console.log("Hi, I'm " + this.name);
+//   },
+//   'isInterestedIn': function (hobby) {
+//     if (this.hobbies.includes(hobby)) {
+//         console.log("Why yes, I love " + hobby);
+//     } else {
+//         console.log("Well, I have " + this.hobbies.length + " but " + hobby + " is not one of them");
+//     }
+//   }
+//   // TODO Ide írd a metódusod.
+// };
+// person.introduce();                       // kiírja, hogy “Hi, I’m Berry”
+// person.isInterestedIn("Longform Improv"); // azt kellene kiírnia, hogy "Well, I have 2 hobbies, but Longform Improv is not one of them"
+// person.isInterestedIn("Discgolf");        // azt kellene kiírnia, hogy "Why yes, I love Discgolf"
+
+
+// var hero = {
+//     _name: 'John Doe',
+//     getSecretIdentity: function (){
+//       return this._name;
+//     }
+//   };
+//   var stoleSecretIdentity = hero.getSecretIdentity;
+//   console.log(stoleSecretIdentity());
+//   console.log(hero.getSecretIdentity());
+
+// Mindkét console.log utasítás ugyanazt a függvényt hívja meg, de két különböző módon.
+// Az első egyszerű függvényként hívja meg a stoleSecretIdentity függvényt, így ebben az esetben a this 
+//a globális kontextusra mutat. Mivel nincs _name változó a globális kontextusban, az undefined érték íródik ki. Alteregó megvédve!
+// A második esetben a megfelelő módon hívjuk meg a getSecretIdentity-t, a hero metódusaként, így 
+//ezúttal a this magára a hero objektumra mutat. Megkapjuk a hősünk nevét, mert szépen kértük.
+
