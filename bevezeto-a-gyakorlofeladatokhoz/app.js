@@ -491,3 +491,25 @@ function loaded() {
 // A második esetben a megfelelő módon hívjuk meg a getSecretIdentity-t, a hero metódusaként, így 
 //ezúttal a this magára a hero objektumra mutat. Megkapjuk a hősünk nevét, mert szépen kértük.
 
+
+// function introFunction (valami) {
+//     console.log('Hello, a nevem ' + this.name + ' és a többi szöveg: ' + valami);
+// }
+// const person = {
+//     name: 'Berry',
+//     introduce: introFunction
+// };
+// person.introduce('ez pedig a valami!');
+
+
+// "use strict";
+// function introFunction () {
+//     console.log("Hi, I'm " + this.name);
+//   }
+//   const person = {
+//     name: "Berry",
+//     introduce: introFunction
+//   };
+//   introFunction();
+
+
