@@ -516,3 +516,34 @@ function loaded() {
 //   function introFunction() {
       
 //   }
+
+//arrow function (nyílfüggvény)
+// const doSomething = function () {
+//     console.log("Csináltam valamit");
+// }
+//helyett
+// const doSomething2 = () => {
+//     console.log("Csináltam valamit");
+// }
+// doSomething2();
+
+//call és apply
+// const person = {
+//     name: "Berry",
+//     hobby: "topiary"
+// }
+// const me = {
+//     name: "Péter",
+//     hobby: "programming"
+// }
+// function introduce () {
+//     console.log("Hi, I'm " + this.name + ", and I spend my free time practicing " + this.hobby + ".");
+// }
+// function introduce2() {
+//     console.log("Hi, I'm " + this.name + ", and I spend my free time practicing " + this.hobby + ".");
+// }
+
+// introduce.call(person);
+// introduce.apply(me);
+// const introducePerson = introduce2.bind(me);
+// introducePerson();
