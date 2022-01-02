@@ -4,7 +4,7 @@ function loaded() {
     // var context = canvas.getContext('2d');
 
     //context.fillStyle = 'black';
-    
+
     // context.fillRect(125,50,200,200);
 
     // context.beginPath(); //a láthatatlan vonalat tiszta lappal indítom
@@ -146,7 +146,7 @@ function loaded() {
     //     blue += 15;
     //     positionY += size + padding;
     // }
-    
+
     //12.feladat
     // var size = 100;
     // var padding = 120;
@@ -400,60 +400,60 @@ function loaded() {
     // drawTriangle(225, 33);
 }
 
-    //CLOSURE
-    // (function () {
-    //     var greeting = "Hello ";
-    //     function greetWithExcitement (name) {
-    //         var excitement = "!!!";
-    //         console.log(greeting + name + excitement);
-    //     }
-    //     greetWithExcitement("Berry");
-    // })();
+//CLOSURE
+// (function () {
+//     var greeting = "Hello ";
+//     function greetWithExcitement (name) {
+//         var excitement = "!!!";
+//         console.log(greeting + name + excitement);
+//     }
+//     greetWithExcitement("Berry");
+// })();
 
-    //ha valamit később is akarunk használni a becsomagolt
-    //kódból azt adjuk vissza a csomagolófüggvény visszatérési, return értékeként
-    // var greet = (function (){
-    //     var greeting = 'Hello ';
-    //     function greetWithExcitement (name) {
-    //         var excitement = "!!!";
-    //         console.log(greeting + name + excitement);
-    //     }
-    //     return greetWithExcitement;
-    // })();
-    // greet("Berry");
+//ha valamit később is akarunk használni a becsomagolt
+//kódból azt adjuk vissza a csomagolófüggvény visszatérési, return értékeként
+// var greet = (function (){
+//     var greeting = 'Hello ';
+//     function greetWithExcitement (name) {
+//         var excitement = "!!!";
+//         console.log(greeting + name + excitement);
+//     }
+//     return greetWithExcitement;
+// })();
+// greet("Berry");
 
-    // var converter = (function () {
-    //     var a;
-    //     function logAbsoluteUrl (url) {
-    //         if (!a) {
-    //             a = document.createElement('a');
-    //         }
-    //         a.href = url;
-    //         console.log(a.href);
-    //     };
-    //     return logAbsoluteUrl;
-    // })();
-    // converter("valami");
+// var converter = (function () {
+//     var a;
+//     function logAbsoluteUrl (url) {
+//         if (!a) {
+//             a = document.createElement('a');
+//         }
+//         a.href = url;
+//         console.log(a.href);
+//     };
+//     return logAbsoluteUrl;
+// })();
+// converter("valami");
 
 
-    //köszönő modulba csomagolt köszönő függvények
-    // var moduleName = (function () {
-    //     var greeting = "Hello ";
+//köszönő modulba csomagolt köszönő függvények
+// var moduleName = (function () {
+//     var greeting = "Hello ";
 
-    //     return {
-    //         greetWithExcitement (name) {
-    //             var excitement = "!!!";
-    //             console.log(greeting + name + excitement);
-    //         },
-    //         greetWithASmile (name) {
-    //             var smile = " :)";
-    //             console.log(greeting + name + smile);
-    //         }
-    //     }
-    // })();
+//     return {
+//         greetWithExcitement (name) {
+//             var excitement = "!!!";
+//             console.log(greeting + name + excitement);
+//         },
+//         greetWithASmile (name) {
+//             var smile = " :)";
+//             console.log(greeting + name + smile);
+//         }
+//     }
+// })();
 
-    // moduleName.greetWithExcitement("Berry");
-    // moduleName.greetWithASmile("Berry");
+// moduleName.greetWithExcitement("Berry");
+// moduleName.greetWithASmile("Berry");
 
 // const person = {
 //   'name': "Berry",
@@ -514,7 +514,7 @@ function loaded() {
 
 //   "use strict";
 //   function introFunction() {
-      
+
 //   }
 
 //arrow function (nyílfüggvény)
@@ -536,7 +536,7 @@ function loaded() {
 //     name: "Péter",
 //     hobby: "programming"
 // }
-// function introduce () {
+// function introduce() {
 //     console.log("Hi, I'm " + this.name + ", and I spend my free time practicing " + this.hobby + ".");
 // }
 // function introduce2() {
@@ -547,3 +547,4 @@ function loaded() {
 // introduce.apply(me);
 // const introducePerson = introduce2.bind(me);
 // introducePerson();
+
