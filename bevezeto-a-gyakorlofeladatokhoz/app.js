@@ -529,3 +529,30 @@ function loaded() {
 // const introducePerson = introduce2.bind(me);
 // introducePerson();
 
+
+// Gyártó függvény példa
+// function exampleFactory (parameter1, parameter2) {
+//     return {
+//         property1: parameter1,
+//         property2: parameter2,
+//         method: function () {
+//             return this.property1;
+//         }
+//     }
+// }
+
+// console.log(exampleFactory(23, 32));
+
+// Feladat
+function createProduct (itemName, itemDiscription, itemPrice) {
+    return {
+        name: itemName,
+        discription: itemDiscription,
+        price: itemPrice,
+        print: function () {
+            console.log(this.name + ' is ' + this.discription + ' and costs ' + this.price + '€');
+        }
+    }
+}
+const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
+disCatcher.print();
