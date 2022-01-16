@@ -556,8 +556,3 @@ function createProduct (itemName, itemDiscription, itemPrice) {
 }
 const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
 disCatcher.print();
-
-function valami () {
-    console.log("Ez már valami");
-}
-valami();
