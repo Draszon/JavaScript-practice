@@ -544,6 +544,7 @@ function loaded() {
 // console.log(exampleFactory(23, 32));
 
 // Feladat
+<<<<<<< HEAD
 // function createProduct (itemName, itemDiscription, itemPrice) {
 //     return {
 //         name: itemName,
@@ -556,3 +557,22 @@ function loaded() {
 // }
 // const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
 // disCatcher.print();
+=======
+function createProduct (itemName, itemDiscription, itemPrice) {
+    return {
+        name: itemName,
+        discription: itemDiscription,
+        price: itemPrice,
+        print: function () {
+            console.log(this.name + ' is ' + this.discription + ' and costs ' + this.price + '€');
+        }
+    }
+}
+const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
+disCatcher.print();
+
+function valami () {
+    console.log("Ez már valami");
+}
+valami();
+>>>>>>> my-branch
