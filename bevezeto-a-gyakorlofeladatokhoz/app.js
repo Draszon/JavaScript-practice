@@ -529,6 +529,7 @@ function loaded() {
 // const introducePerson = introduce2.bind(me);
 // introducePerson();
 
+// OBJEKTUMORIENTÁLT JAVASCRIPT
 
 // Gyártó függvény példa
 // function exampleFactory (parameter1, parameter2) {
@@ -543,16 +544,46 @@ function loaded() {
 
 // console.log(exampleFactory(23, 32));
 
+// konstruktor függvény
 // Feladat
-function createProduct (itemName, itemDiscription, itemPrice) {
-    return {
-        name: itemName,
-        discription: itemDiscription,
-        price: itemPrice,
-        print: function () {
-            console.log(this.name + ' is ' + this.discription + ' and costs ' + this.price + '€');
-        }
-    }
+// function createProduct (itemName, itemDiscription, itemPrice) {
+//     return {
+//         name: itemName,
+//         discription: itemDiscription,
+//         price: itemPrice,
+//         print: function () {
+//             console.log(this.name + ' is ' + this.discription + ' and costs ' + this.price + '€');
+//         }
+//     }
+// }
+// const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
+// disCatcher.print();
+
+
+// function ExampleCounstructor (parameter1, parameter2) {
+//     this.property1 = parameter1;
+//     this.property2 = parameter2;
+//     this.method1 = function () {
+//         return this.property1;
+//     }
+// };
+
+// const example = new ExampleCounstructor(12, 23);
+// console.log(example);
+
+function Product (name, description, price) {
+    this.name = name;
+    this.description = description;
+    this.price = price;
+    this.currency = "€";
+    // this.print = function () {
+    //     console.log(this.name + ' is ' + this.description + ' and costs ' + this.price + this.currency);
+    // }
 }
-const disCatcher = createProduct("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
+
+Product.prototype.print = function () {
+    console.log(this.name + ' is ' + this.description + ' and costs ' + this.price + this.currency);
+}
+
+const disCatcher = new Product("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
 disCatcher.print();
