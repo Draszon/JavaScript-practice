@@ -581,6 +581,7 @@ function Product (name, description, price) {
     // }
 }
 
+// prototípus metódus
 Product.prototype.print = function () {
     console.log(this.name + ' is ' + this.description + ' and costs ' + this.price + this.currency);
 }
