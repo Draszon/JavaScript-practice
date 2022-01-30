@@ -571,7 +571,7 @@ function loaded() {
 // const example = new ExampleCounstructor(12, 23);
 // console.log(example);
 
-function Product (name, description, price) {
+/*function Product (name, description, price) {
     this.name = name;
     this.description = description;
     this.price = price;
@@ -585,6 +585,76 @@ function Product (name, description, price) {
 Product.prototype.print = function () {
     console.log(this.name + ' is ' + this.description + ' and costs ' + this.price + this.currency);
 }
+const disCatcher = new Product("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
+disCatcher.print();*/
+
+
+//class-ok
+/*class Person {
+    constructor (name) {
+      this.name = name;
+    }
+    
+    introduce() {
+        console.log("Hi, I'm " + this.name);
+    }
+  }
+  
+  const berry = new Person("Berry");
+  berry.introduce();  // logs "Hi, I'm Berry"
+  
+  // 1. use "extends" to specify parent to inherit from
+  class Discgolfer extends Person {
+    constructor (name, disc, score) {
+      // 2. Call the parent constructor and pass shared parameters
+      super(name);
+      this.favoriteDisc = disc;
+      this.highScore = score;
+    }
+    
+    brag () {
+      console.log("I'm a discgolfer and I can throw " + this.highScore + " with my " + this.favoriteDisc);
+    }
+  }
+  
+  const henry = new Discgolfer("Henry", "Star Destroyer", 500);
+  henry.introduce();  // logs "Hi, I'm Henry"
+  henry.brag();  // logs ""I'm a discgolfer and I can throw 500 with my Star Destroyer""*/
+
+
+  //product példa classokkal
+
+/*  class Product {
+      constructor (name, description, price) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.currency = "€";
+      }
+
+      print() {
+        console.log(this.name + " is " + this.description + " and costs " + this.price + this.currency);
+      }
+  }
 
 const disCatcher = new Product("DisCatcher Discgolf Target", "a chain grid that catches fast and slow putts, heavy and light discs like no other target", 399);
 disCatcher.print();
+
+  class SaleProduct extends Product {
+      constructor (name, description, price, discount) {
+          super(name, description, price);
+          this.discountAmount = discount;
+      }
+
+      salePrice() {
+        return this.price * (1 - this.discountAmount / 100);
+      }
+
+      print() {
+        console.log(this.name + " is " + this.description + " and costs a discounted " + this.salePrice() + this.currency);
+      }
+  }
+
+  const saleCatcher = new SaleProduct("Star Destroyer Disc", "the first Speed 12 driver and is one of the primary discs used by many professional disc golfers", 17.99, 10);
+  saleCatcher.print();*/
+
