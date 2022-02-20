@@ -50,7 +50,7 @@
     });
 });
 
-// metódusok összefűzése másik metódussal chaining
+// metódusok összefűzése másik metódussal (chaining)
 $(document).ready(function() {
     $("div").click(function() {
         $(this)
@@ -60,3 +60,4 @@ $(document).ready(function() {
             .animate({width: "150px"});
     });
 });*/
+
