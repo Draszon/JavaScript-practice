@@ -1,7 +1,7 @@
 {
-    "employee": {
-        "name": "Peter",
-        "age": "27",
-        "city": "Eger"
-    }
+    "employees":[
+        {"firstName":"John", "lastName":"Doe"},
+        {"firstName":"Anna", "lastName":"Smith"},
+        {"firstName":"Peter", "lastName":"Jones"}
+    ]
 }

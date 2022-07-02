@@ -1,6 +1,10 @@
-let field = document.querySelector("#demo");
-let text = localStorage.getItem("data.json");
-let obj = JSON.parse(text);
+const text = document.getElementById('demo');
 
+const addBtn = document.getElementById('add');
 
-field.innerHTML = obj.employee.name;
+let todoArray = [];
+let todo = localStorage.getItem("data.json");
+
+todoArray = JSON.parse(todo);
+
+console.log(todoArray);
